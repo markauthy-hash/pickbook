@@ -1,1 +1,182 @@
-<h1>🏓 PickBook v2</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PickBook</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f4f6f8;
+    color:#222;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    background:#198754;
+    color:white;
+    padding:24px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
+
+.header h1{
+    margin:0;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.location{
+    color:#666;
+}
+
+.players{
+    margin-top:15px;
+}
+
+.player{
+    padding:6px 0;
+    border-bottom:1px solid #eee;
+}
+
+.status{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    background:#198754;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.button:hover{
+    background:#157347;
+}
+
+.waiting{
+    background:#fd7e14;
+}
+
+.waiting:hover{
+    background:#e76b00;
+}
+
+.footer{
+    text-align:center;
+    color:#777;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🏓 PickBook</h1>
+        <p>Réservez vos parties entre amis</p>
+    </div>
+
+    <div class="card">
+
+        <h2>Samedi 10h00</h2>
+
+        <p class="location">
+            📍 Parc Michel-Chartrand
+        </p>
+
+        <div class="players">
+            <strong>Joueurs inscrits</strong>
+
+            <div class="player">✅ Marc</div>
+            <div class="player">✅ Jean</div>
+            <div class="player">✅ Sophie</div>
+        </div>
+
+        <div class="status">
+            1 place restante sur 4
+        </div>
+
+        <button class="button"
+        onclick="alert('Inscription simulée!')">
+            ✅ Je participe
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Dimanche 13h00</h2>
+
+        <p class="location">
+            📍 Centre sportif Longueuil
+        </p>
+
+        <div class="players">
+            <strong>Joueurs inscrits</strong>
+
+            <div class="player">✅ Martin</div>
+            <div class="player">✅ Julie</div>
+            <div class="player">✅ Alain</div>
+            <div class="player">✅ Chantal</div>
+        </div>
+
+        <div class="status">
+            COMPLET
+        </div>
+
+        <button class="button waiting"
+        onclick="alert('Liste d’attente simulée!')">
+            ⏳ Liste d'attente
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🔍 Trouver un joueur</h2>
+
+        <p>
+            Il manque un joueur pour compléter une partie ?
+        </p>
+
+        <button class="button"
+        onclick="alert('Recherche simulée!')">
+            Chercher un joueur
+        </button>
+
+    </div>
+
+    <div class="footer">
+        PickBook MVP v1
+    </div>
+
+</div>
+
+</body>
+</html>
